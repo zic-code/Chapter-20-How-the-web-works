@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter_20_How_The_Web_Work </title>
+  <style> 
+  .answer{
+    color:green;
+  };
+  body{
+    color:white;
+    background-color: black;
+  };
+  
+
+
+  </style>
+</head>
+<body>
+  <h1>How Web Works Exercise</h1>
+  <div class="part_1">
+  <h3>Part One: Solidify Teminology</h3>
+  <p>In your own terms define the following terms:</p>
+  <ul>
+    <li>What is HTTP</li> <span class="answer">
+      Answer: HyperText Transfer Protocol(HTTP) is a protocol that bring some documents or other resources.
+    </span>
+    <li>What is a URL?</li><span class="answer">
+      Answer: URL stands for Uniform Resource Locator. A URL is nothing more than the address of a given unique resource on the Web
+    </span>
+    <li>What is DNS?</li><span class="answer">
+      Answer:Short for Domain Name System, this is a system that takes human-readable URLs and converts them into IP addresses.
+    </span>
+    <li>What is a query string?</li><span class="answer">
+      The query string allows you to pass key-value pairs into the URL, in the format ?key1=value1&key2=value2...
+    </span>
+    <li>What are two HTTP verbs and how are they different?</li><span class="answer">
+      <ul><li>GET-get some data from the server(most pages, search forms)</li>
+      <li>POST-send some data to the server(pages that changes data on server) </ul></li>
+    </span>
+    <li>What is an HTTP request?</li><span class="answer">
+      An HTTP request is a request from a client to a server which follows the HTTP protocol (eg a request for HTML from news.google.com)
+    </span>
+    <li>What is an HTTP response?</li><span class="answer">
+      An HTTP response is a response from a server to a client which follows the HTTP protocol (eg sending back HTML/CSS/JS/etc)
+    </span>
+    <li>What is an HTTP header? Give a couple examples of request and response headers you have seen.</li><span class="answer">
+      <ul>
+        <li class="answer">Headers provide additional information about the request or the response. Here are some examples:</li>
+        <li class="answer">Request headers: Host, User-Agent, Accept, Cookie, Cache-Control</li>
+        <li class="answer">Response headers: Content-Type, Last-Modified, Set-Cookie, Cache-Control</li>
+      </ul>
+
+    </span>
+    
+  <li>What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?</li><span class="answer">
+    <ol>
+      <li>Your browser "resolves" the name into an IP address using DNS</li>
+      <li>Your browser makes a request to that IP address, including headers (info about browser, any previous cookies, and other this)</li>
+      <li>The server sends a response (typically, HTML, with a status code (200 if it was sucessful))</li>
+      <li>The browser makes a DOM from that HTML, and finds any other resources needed (images, CSS, JavaScript, etc)</li>
+      <li>The browser makes separate HTTP requests for those resources and receives response from the server for each</li>
+    </ol>
+  </span>
+  </ul>
+</div>
+
+<div class="Part2">
+
+</div>
+</body>
+</html>
